@@ -11,7 +11,7 @@ const Saved = (props) => {
           return (
             <div key={article._id}>
               <div className="article-display row">
-                <a href={article.url} target="_blank" className="col-md-4"><img src={article.image} className="img-responsive" alt="thumbnail"/></a>
+                <a href={article.url} target="_blank" className="col-md-4"></a>
                 <div className="col-md-3">
                   <h4>Title: {article.title}</h4>
                 </div>

@@ -1,5 +1,6 @@
 import React from "react";
-import { Input, FormBtn } from "../Form";
+import Input  from "./Input";
+import Button  from "./Button";
 
 const Search = (props) => {
     return (
@@ -10,7 +11,7 @@ const Search = (props) => {
         <div className="card-body">
           <form onSubmit={props.handleFormSubmit}>
             <Input handleInputChange={props.handleInputChange} search={props.search}/>
-            <FormBtn handleButtonClick={props.handleButtonClick}/>
+            <Button handleButtonClick={props.handleButtonClick}/>
           </form>
         </div>
       </div>

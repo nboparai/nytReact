@@ -5,10 +5,7 @@ router.route("/")
   .get(articlesController.findAll)
   .post(articlesController.create);
 
-router.get("api/test", (req, res) => {
-  console.log("testing");
-  res.send("testing");
-});
+
 
 router
   .route("/:id")
