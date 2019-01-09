@@ -1,0 +1,20 @@
+.results-box {
+    background-color: grey;
+    color: white;
+  }
+  
+  .article-display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+    padding: 18px;
+  }
+  
+  hr {
+    background-color: white;
+  }
+  
+  img {
+    width: 200px;
+  }
