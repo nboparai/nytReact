@@ -14,7 +14,7 @@ const Result = (props) => {
           return (
             <div key={article._id}>
               <div className="article-display row">
-                <a href={article.web_url} target="_blank" className="col-md-2"><span>Link for the Article </span></a>
+                <a href={article.web_url} target="_blank" className="col-md-2"><span id="link">Link for the Article </span></a>
                 
                 <div className="col-md-3">
                   <h4>Title: {article.headline.main}</h4>
