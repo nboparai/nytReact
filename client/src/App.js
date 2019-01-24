@@ -56,8 +56,8 @@ class App extends Component {
   handleButtonClick = () => {
     if (this.state.search !== "") {
       API.getData(this.state.search).then((res) => {
-        console.log(res)
-        this.setState({result: res.data.response.docs})
+        console.log(res, "this is results for NY")
+        this.setState({result: res.data})
       }).catch((err) => {
         console.log(err);
       });

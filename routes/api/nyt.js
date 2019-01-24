@@ -5,9 +5,12 @@ const axios = require("axios");
 router.route("/:searchTerm")
   .get((req, res)=> {
       let searchTerm = req.params.searchTerm;
-       axios.get(`${URL}q=${searchTerm}&api-key=${KEY}`)
-       .then((result)=>
-    console.log(result))
+       axios.get(`${URL}?q=${searchTerm}&api-key=${KEY}`)
+       .then((result)=>{
+        res.json(result.data.response.docs)
+       })
+      
+    // console.log(result.data.response.docs, "this is our results"))
     .catch((result)=>
     console.log(result))
 
